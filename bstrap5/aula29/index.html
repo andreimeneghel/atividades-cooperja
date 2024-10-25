@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Carrosel my friend</title>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel" id="ads">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="https://picsum.photos/1280/420?random=1" alt="" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Titulo do Slide1</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quisquam est deserunt quae consequatur necessitatibus eius ab cupiditate nisi asperiores nulla rerum rem error, incidunt a? Maiores in eum similique.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="https://picsum.photos/1280/420?random=2" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://picsum.photos/1280/420?random=3" alt="" class="d-block w-100">
+                </div>
+            </div>
+            <div>
+
+                <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"> </span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"> </span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
