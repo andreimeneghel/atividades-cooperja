@@ -1,5 +1,7 @@
 <?php
 
+namespace ScreenMatch\Modelo;
+
 class Serie extends Titulo{
 
     public function __construct(
@@ -15,4 +17,7 @@ class Serie extends Titulo{
         parent::__construct($nome,$anoLancamento,$genero);
     }
 
+        public function duracaoEmMinutos(): int{
+            return $this->temporadas* $this->episodiosPorTemporadas * $this->minutosPorEpidio;
+        }
 }
