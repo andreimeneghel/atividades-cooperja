@@ -11,9 +11,9 @@ class ConversorNotaEstrela{
 
             
             return round($nota) / 2;
-            }catch(DivisionByZeroError){
+            }catch(DivisionByZeroError|ArgumentCountError){
                 return 0;
 
-            }
+            } 
         }
 }
