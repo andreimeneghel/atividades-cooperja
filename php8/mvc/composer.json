@@ -1,0 +1,15 @@
+{
+    "name": "cooperja/mvc",
+    "autoload": {
+        "psr-4": {
+            "Alura\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrei",
+            "email": "andreimeneghel@unesc.net"
+        }
+    ],
+    "require": {}
+}
