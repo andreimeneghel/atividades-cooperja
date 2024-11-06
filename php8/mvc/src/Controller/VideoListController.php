@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Alura\Mvc\Controller;
 
+use Alura\Mvc\Helper\HtmlRenderTrait;
 use Alura\Mvc\Repository\VideoRepository;
 
 class VideoListController implements Controller
 {
+    use HtmlRenderTrait;
     public function __construct(private VideoRepository $videoRepository)
     {
     }
@@ -15,7 +17,9 @@ class VideoListController implements Controller
     public function processaRequisicao(): void
     {
         $videoList = $this->videoRepository->all();
-        require_once __DIR__ . '/../../views/video-list.php';
-
+        echo $this->renderTemplate(
+            'video-list',
+            ['videoList' => $videoList]
+        );
     }
 }
